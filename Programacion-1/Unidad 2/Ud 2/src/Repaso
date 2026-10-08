@@ -1,0 +1,11 @@
+
+
+public class Repaso{
+    public static void main(String[] args){
+        int numero=0,valor=3,maximo;
+
+        Scanner teclado=new Scanner(System.in);
+        numero=teclado.nextInt(); nextLine();
+        numero=Integer.parseInt(teclado.nextInt());
+    }
+}

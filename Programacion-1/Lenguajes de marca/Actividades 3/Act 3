@@ -1,0 +1,38 @@
+<!doctype html>
+
+<title>Ejercicio 3.1 </title>
+<body>
+    <h2> Paises con mayor poblacion</h2>
+    <ol>
+        <li> China </li>
+        <li> Idia </li>
+        <li> Rusia </li>
+    </ol>
+</body>
+
+<title> Ejercicio 3.8</title>
+<table>
+<tr>
+    <td> rowspan=6 </td>
+    <td> rowspan=2  >primeros </td>
+    <td> Espauetis</td>
+</tr>
+<tr>
+    <td> Pastel</td>
+</tr>
+<tr>
+    <td> rowspan=2 >Segundos </td>
+    <td> Hamburguesa </td>
+    <td> Merluza</td>
+</tr>
+
+</tr>
+
+
+
+</table>
+
+
+
+
+</html>
