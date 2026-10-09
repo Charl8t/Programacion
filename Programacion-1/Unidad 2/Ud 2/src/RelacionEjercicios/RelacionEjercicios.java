@@ -201,53 +201,170 @@ else{
 //6: Full Timetable
 //7: close
 
-int lunes=1,martes=2,miercoles=3,jueves=4,viernes=5,completo=6,cerrar=7;
+// int lunes=1,martes=2,miercoles=3,jueves=4,viernes=5,completo=6,cerrar=7;
 
-System.out.println("Introduce la dia");
-Scanner sc=new Scanner(System.in);
-int dia = sc.nextInt();
+// System.out.println("Introduce la dia");
+// Scanner sc=new Scanner(System.in);
+// int dia = sc.nextInt();
 
-if(dia==lunes){
-    System.out.println("Ent. de Desarrollo, Lenguajes de Marcas, BBDD, Sist. Inf., Programacion");
-}else{
-    if(dia==martes){
-        System.out.println("Sist Inf, Digitalizacion, IPE, Sostenibilidad, Programacion");
-    }
-}
-{
-    if(dia==miercoles){
-        System.out.println("Programacion, IPE, BBDD, Programacion");
-    }
-}
-{
-    if(dia==jueves){
-        System.out.println("Leng. de Marcas, BBDD, Programacion");
-    }
-}
-{
-    if(dia==viernes){
-        System.out.println("Sist. Inf, BBDD, Ent. de Desarrollo, IPE");
-    }
-}
-{
-    if(dia==completo){
-        System.out.println("Horario completo: "+lunes+", "+martes+", "+miercoles+", "+jueves+", "+viernes);
-    }
-}
-{
-    if(dia==cerrar){
-        System.out.println("Cerrar");
-    }
-}
+// if(dia==lunes){
+//     System.out.println("Ent. de Desarrollo, Lenguajes de Marcas, BBDD, Sist. Inf., Programacion");
+// }else{
+//     if(dia==martes){
+//         System.out.println("Sist Inf, Digitalizacion, IPE, Sostenibilidad, Programacion");
+//     }
+// }
+// {
+//     if(dia==miercoles){
+//         System.out.println("Programacion, IPE, BBDD, Programacion");
+//     }
+// }
+// {
+//     if(dia==jueves){
+//         System.out.println("Leng. de Marcas, BBDD, Programacion");
+//     }
+// }
+// {
+//     if(dia==viernes){
+//         System.out.println("Sist. Inf, BBDD, Ent. de Desarrollo, IPE");
+//     }
+// }
+// {
+//     if(dia==completo){
+//         System.out.println("Horario completo: "+lunes+", "+martes+", "+miercoles+", "+jueves+", "+viernes);
+//     }
+// }
+// {
+//     if(dia==cerrar){
+//         System.out.println("Cerrar");
+//     }
+// }
 //Ejercicio 6-------------------------------------------------------------------------
 //Save position, days of travel, marital status.
 //Save Base payment
 //Calculate extra and tax
 
-int nomina;
-int Prog.junior, prog.senior, JefeProyecto;
-int dias;
-int estadoCivil;
+// int nomina1=950,nomina2=1200,nomina3=1600;
+
+// System.out.println("Introduce el cargo(1-3)");
+// Scanner sc=new Scanner(System.in);
+// int cargo = sc.nextInt(); sc.nextLine();
+// System.out.println("Introduce las dias de viaje");
+// int dias = sc.nextInt(); sc.nextLine();
+// System.out.println("Introduzca su estado civil (1: Soltero, 2: Casado)");
+// int estadoCivil = sc.nextInt(); sc.nextLine();
+
+// if (cargo==1) {
+//     System.out.println("Sueldo base: "+nomina1);
+//     if (dias>0) {
+//     System.out.println("Dietas (" +dias+ "): " +dias*30+ " euros");
+// }
+
+// System.out.println("Sueldo bruto:" +((nomina1)+(dias*30))+ " euros");
+// if (estadoCivil==1) {
+//     System.out.println("Retencion IRPF (25%) " +(((nomina1)+(dias*30))*0.25)+ " euros");
+//     System.out.println("Sueldo neto: " +(((nomina3)+(dias*30))-(((nomina3)+(dias*30))*0.25)) + " euros");
+// }else{
+//         System.out.println("Retencion IRPF (20%) " +(((nomina1)+(dias*30))*0.20)+ " euros");
+//         System.out.println("Sueldo neto: " +(((nomina3)+(dias*30))-(((nomina3)+(dias*30))*0.20)) + " euros");
+// }
+// }
+
+
+// if (cargo==2) {
+//     System.out.println("Sueldo base: "+nomina2);
+// if (dias>0) {
+//     System.out.println("Dietas (" +dias+ "): " +dias*30+ " euros");
+// }
+// System.out.println("Sueldo bruto :" +((nomina2)+(dias*30))+ " euros");
+// if (estadoCivil==1) {
+//     System.out.println("Retencion IRPF (25%) " +(((nomina2)+(dias*30))*0.25)+ " euros");
+//     System.out.println("Sueldo neto: " +(((nomina3)+(dias*30))-(((nomina3)+(dias*30))*0.25)) + " euros");
+// }else{
+//         System.out.println("Retencion IRPF (20%) " +(((nomina2)+(dias*30))*0.20)+ " euros");
+//         System.out.println("Sueldo neto: " +(((nomina3)+(dias*30))-(((nomina3)+(dias*30))*0.20)) + " euros");
+// }
+// }
+
+// if (cargo==3) {
+//     System.out.println("Sueldo base: "+nomina3);
+// if (dias>0) {
+//     System.out.println("Dietas (" +dias+ "): " +dias*30+ " euros");
+// }
+// System.out.println("Sueldo bruto: " +((nomina3)+(dias*30))+ " euros");
+// if (estadoCivil==1) {
+//     System.out.println("Retencion IRPF (25%) " +(((nomina3)+(dias*30))*0.25)+ " euros");
+//     System.out.println("Sueldo neto: " +(((nomina3)+(dias*30))-(((nomina3)+(dias*30))*0.25)) + " euros");
+// }else{
+//         System.out.println("Retencion IRPF (20%) " +(((nomina3)+(dias*30))*0.20)+ " euros");
+//         System.out.println("Sueldo neto: " +(((nomina3)+(dias*30))-(((nomina3)+(dias*30))*0.20)) + " euros");
+// }
+// }
+
+//Ejercicio 7-------------------------------------------------------------------------
+//scan numbers until 0
+//count positives and negatives
+//clculate mean
+//count number of time 7 or -7 appears
+
+int positivos=0;
+int negativos=0;
+int suma=0;
+int contador=0;
+int siete=0;
+
+ System.out.println("Introduce el Numero");
+ Scanner sc=new Scanner(System.in);
+ int numero=sc.nextInt(); sc.nextLine();
+
+while (numero!=0); {
+    if (numero>0) {
+        positivos++;
+    }
+    else{
+        negativos++;
+    }
+    
+    if (numero==7 || numero==-7) {
+        siete++;
+    }
+
+    suma+=numero;
+    contador++;
+    System.out.println("Numero: " +numero);
+}
+
+if (contador>0) {
+    System.out.println("Media: " +suma/contador);
+    System.out.println("Poitivos: " +positivos);
+    System.out.println("Negativos: " +negativos);
+    System.out.println("Repeticiones de siete: " +siete);
+}
+else{
+    System.out.println("No se han introducido numeros");
+}
+
+//Ejercicio 8-------------------------------------------------------------------------
+//count n of Spin(Golden ratio)
+//start at 0
+
+
+
+
+
+
+
+//Ejercicio 9-------------------------------------------------------------------------
+//prime numbers from 1 to 100
+
+
+
+
+
+
+//Ejercicio 10-------------------------------------------------------------------------
+//scan number, count number of odd and even digits
+
 
 
 
