@@ -307,69 +307,69 @@ else{
 //clculate mean
 //count number of time 7 or -7 appears
 
-int positivos=0;
-int negativos=0;
-int suma=0;
-int contador=0;
-int siete=0;
+//int positivos=0;
+//int negativos=0;
+//int suma=0;
+//int contador=0;
+//int siete=0;
 
- System.out.println("Introduce el Numero");
- Scanner sc=new Scanner(System.in);
- int numero=sc.nextInt(); sc.nextLine();
+ //System.out.println("Introduce el Numero");
+ //Scanner sc=new Scanner(System.in);
+ //int numero=sc.nextInt(); sc.nextLine();
 
-while (numero!=0); {
-    if (numero>0) {
-        positivos++;
-    }
-    else{
-        negativos++;
-    }
+//while (numero!=0); {
+    //if (numero>0) {
+        //positivos++;
+    //}
+    //else{
+        //negativos++;
+    //}
     
-    if (numero==7 || numero==-7) {
-        siete++;
-    }
+    //if (numero==7 || numero==-7) {
+        //siete++;
+    //}
 
-    suma+=numero;
-    contador++;
-    System.out.println("Numero: " +numero);
-}
+    //suma+=numero;
+    //contador++;
+    //System.out.println("Numero: " +numero);
+//}
 
-if (contador>0) {
-    System.out.println("Media: " +(double)suma/contador);
-    System.out.println("Poitivos: " +positivos);
-    System.out.println("Negativos: " +negativos);
-    System.out.println("Repeticiones de siete: " +siete);
-}
-else{
-    System.out.println("No se han introducido numeros");
-}
+//if (contador>0) {
+//    System.out.println("Media: " +(double)suma/contador);
+//    System.out.println("Poitivos: " +positivos);
+//    System.out.println("Negativos: " +negativos);
+//    System.out.println("Repeticiones de siete: " +siete);
+//}
+//else{
+//    System.out.println("No se han introducido numeros");
+//}
 
 //Ejercicio 8-------------------------------------------------------------------------
-//count n of Spin(Golden ratio)
+//count n of Golden ratio
 //start at 0
 
-System.out.println("Introduce n (n>=1)");
-int n=sc.nextInt(); sc.nextLine();
+//System.out.println("Introducir n (n>=1)");
+//int n=sc.nextInt(); sc.nextLine();
 
-int a=0;
-int b=1;
-System.out.print(a);
-for (int i=1; i<=n; i++) {
-    System.out.print(", "+b);
-    int siguiente=a+b;
-    a=b;
-    b=siguiente;
-}
-System.out.println();
+//int a=0;
+//int b=1;
+//System.out.print(a);
+//for (int i=1; i<=n; i++) {
+//    System.out.print(", "+b);
+//    int siguiente=a+b;
+//    a=b;
+//    b=siguiente;
+//}
+//System.out.println();
 
 //Ampliacion (Ejercicio 8 con funcion recursiva)
-for (int i=0; i<=n; i++) {
-    System.out.print(fibonacci(i));
-    if (i<n) {
-        System.out.print(", ");
-    }
-}
-System.out.println();
+//for (int i=0; i<=n; i++) {
+//    System.out.print(fibonacci(i));
+//    if (i<n) {
+//        System.out.print(", ");
+//    }
+//}
+//System.out.println();
 
 
 
@@ -378,13 +378,13 @@ System.out.println();
 //Ejercicio 9-------------------------------------------------------------------------
 //prime numbers from 1 to 100
 
-System.out.println("Numeros primos entre 1 y 100:");
-for (int i=1; i<=100; i++) {
-    if (esPrimo(i)) {
-        System.out.print(i+" ");
-    }
-}
-System.out.println();
+//System.out.println("Numeros primos entre 1 y 100:");
+//for (int i=1; i<=100; i++) {
+//    if (esPrimo(i)) {
+//        System.out.print(i+" ");
+ //   }
+//}
+//System.out.println();
 
 
 //Ejercicio 10-------------------------------------------------------------------------
@@ -393,11 +393,36 @@ System.out.println();
 System.out.println("Introduce un numero");
 int num=sc.nextInt(); sc.nextLine();
 
-System.out.println("El " +num+ " contiene " +contarPares(num)+ " digitos pares y " +contarImpares(num)+ " digitos impares.");
-
-
-
-//System.out.println("");
+int contarPares(int n){
+    n=Math.abs(n);
+    if (n==0) {
+        return 1; 
+    }
+    int pares=0;
+    while (n>0) {
+        int digito=n%10;
+        if (digito%2==0) {
+            pares++;
+        }
+        n/=10;
+    }
+    return pares;
+}
+    
+public static int contarImpares(int n){
+    n=Math.abs(n);
+    int impares=0;
+    while (n>0) {
+        int digito=n%10;
+        if (digito%2!=0) {
+            impares++;
+        }
+        n/=10;
+    }
+    return impares;
+}
+    
+System.out.println("El " +num+ " contiene " +contarPares(num)+ " digitos pares y " +contarImpares(num)+ " digitos impares");
 }//main
 
     
@@ -429,35 +454,7 @@ public static boolean esPrimo(int n){
 }
 
 //Ej 10: digitos pares
-public static int contarPares(int n){
-    n=Math.abs(n);
-    if (n==0) {
-        return 1; //el 0 es un digito par
-    }
-    int pares=0;
-    while (n>0) {
-        int digito=n%10;
-        if (digito%2==0) {
-            pares++;
-        }
-        n/=10;
-    }
-    return pares;
-}
-
-//Ej 10: digitos impares
-public static int contarImpares(int n){
-    n=Math.abs(n);
-    int impares=0;
-    while (n>0) {
-        int digito=n%10;
-        if (digito%2!=0) {
-            impares++;
-        }
-        n/=10;
-    }
-    return impares;
-}
+public static 
     
 }//end
 
