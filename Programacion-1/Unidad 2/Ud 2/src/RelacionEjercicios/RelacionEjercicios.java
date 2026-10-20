@@ -8,7 +8,7 @@ public static void main(String[] args) {
 
 //Ejercicio 1
 
-//Scan time, if x then y 
+    
 
 LocalDateTime hour = LocalDateTime.now();
 //int hour=hora;
@@ -48,9 +48,7 @@ else{
 
 
 //--------------------------------------------------------------------
-//Ejercicio 3
-// introduce day, introduce month: scan
-//Switch: 12 months
+//Ejercicio 3:
 
 // int mes;
 // int dia;
@@ -171,8 +169,6 @@ else{
 // }
 
 //Ej 4 ----------------------------------------------------------
-// read numbers, calculate mean
-//>5 Pass, <5 Recuperation
 
 
 // int control1,control2,notarecuperacion;
@@ -197,10 +193,8 @@ else{
 // }
 
 //Ejercicio5-------------------------------------------------------------------------
-//1-5: Day Itinerary
-//6: Full Timetable
-//7: close
 
+    
 // int lunes=1,martes=2,miercoles=3,jueves=4,viernes=5,completo=6,cerrar=7;
 
 // System.out.println("Introduce la dia");
@@ -240,9 +234,7 @@ else{
 //     }
 // }
 //Ejercicio 6-------------------------------------------------------------------------
-//Save position, days of travel, marital status.
-//Save Base payment
-//Calculate extra and tax
+    
 
 // int nomina1=950,nomina2=1200,nomina3=1600;
 
@@ -302,10 +294,7 @@ else{
 // }
 
 //Ejercicio 7-------------------------------------------------------------------------
-//scan numbers until 0
-//count positives and negatives
-//clculate mean
-//count number of time 7 or -7 appears
+
 
 //int positivos=0;
 //int negativos=0;
@@ -345,8 +334,7 @@ else{
 //}
 
 //Ejercicio 8-------------------------------------------------------------------------
-//count n of Golden ratio
-//start at 0
+
 
 //System.out.println("Introducir n (n>=1)");
 //int n=sc.nextInt(); sc.nextLine();
@@ -375,8 +363,7 @@ else{
 
 
 
-//Ejercicio 9-------------------------------------------------------------------------
-//prime numbers from 1 to 100
+//Ejercicio 9----------‐-------------
 
 //System.out.println("Numeros primos entre 1 y 100:");
 //for (int i=1; i<=100; i++) {
@@ -388,7 +375,7 @@ else{
 
 
 //Ejercicio 10-------------------------------------------------------------------------
-//scan number, count number of odd and even digits
+
 
 System.out.println("Introduce un numero");
 int num=sc.nextInt(); sc.nextLine();
@@ -453,8 +440,6 @@ public static boolean esPrimo(int n){
     return primo;
 }
 
-//Ej 10: digitos pares
-public static 
-    
+
 }//end
 
